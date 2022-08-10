@@ -2,8 +2,7 @@
   "pipeline": {
     "build": {
       "dependsOn": [
-        "^build",
-        "$NEXT_PUBLIC_MY_TOKEN"
+        "^build"
       ],
 
       "outputs": ["dist/**", ".next/**"]
@@ -17,8 +16,5 @@
     "clean": {
       "cache": false
     }
-  },
-  "globalDependencies": [
-    "$NEXT_PUBLIC_MY_TOKEN"
-  ]
+  }
 }
